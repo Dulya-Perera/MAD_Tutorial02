@@ -27,6 +27,12 @@ public class MainActivity extends AppCompatActivity {
         Log.i("Lifecycle", "onStart() invoked");
     }
 
+    public void onPause()
+    {
+        super.onPause();
+        Log.i("Lifecycle", "onPause() invoked");
+    }
+
     public void onRestart()
     {
         super.onRestart();
@@ -37,5 +43,17 @@ public class MainActivity extends AppCompatActivity {
     {
         super.onResume();
         Log.i("Lifecycle", "onResume() invoked");
+    }
+
+    public void onStop()
+    {
+        super.onStop();
+        Log.i("Lifecycle", "onStop() invoked");
+    }
+
+    public void onDestroy()
+    {
+        super.onDestroy();
+        Log.i("Lifecycle", "onDestroy() invoked");
     }
 }
